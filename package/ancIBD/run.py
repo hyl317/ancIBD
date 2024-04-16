@@ -264,6 +264,7 @@ def run_plot_pair(path_h5="/n/groups/reich/hringbauer/git/hapBLOCK/data/hdf5/124
            t_model="standard", p_col=p_col, ibd_in=ibd_in, ibd_out=ibd_out, ibd_jump=ibd_jump, 
            min_error=min_error, min_cm=min_cm, cutoff_post=cutoff_post, max_gap=max_gap)
         
+
     if plot:
         if len(title)==0:
             title = f"ancIBD v0.5, {iids[0]} - {iids[1]}, Chr. {ch}"
