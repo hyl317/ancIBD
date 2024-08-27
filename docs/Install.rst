@@ -1,19 +1,19 @@
-Installation
+Installing ``ancIBD``
 ===============
 
-The software ``ancIBD`` is on the official Python package repository (PyPI). One can install it using ``pip``:
+You can find ``ancIBD`` on the official Python package repository (PyPI). It can be installed using ``pip``:
 ::
     python3 -m pip install ancIBD
 
-This package distributes source code that is compiled during installation with ``pip``.
+The software package distributes all source code that ``pip`` then compiles automatically during installation. 
 
-Expert note: The file ``setup.py`` contains the relevant installation information. In specific cases, you can also manually compile the relevant C code using ``Cython``.
+Expert note: The file ``setup.py`` contains the relevant installation information. In specific cases, you can manually compile the relevant C code using ``Cython``.
 
 
 
-Upgrading    
+Upgrading ``ancIBD``   
 ************
-If you already have a ``ancIBD`` release installed via pip and wish to upgrade to the latest stable release, you can do so by adding ``--upgrade``:
+If you already have a ``ancIBD`` release installed and wish to upgrade to the latest release, you can do so with ``pip`` by adding ``--upgrade``:
 ::
     pip install --upgrade ancIBD
     
@@ -24,11 +24,11 @@ For performance reasons, the heavy lifting of the algorithms is coded into C met
 
 Dependencies
 ************
-The basic Python package dependencies are sufficient for the core functions of  ``ancIBD``. We kept the required dependencies minimal to avoid creating dependency conflicts. When ``ancIBD`` is installed, the following dependent Python packages should be automatically installed without any action on your part:
+The basic Python package dependencies are sufficient for the core functions of  ``ancIBD``. We kept the required dependencies minimal to avoid creating dependency conflicts. When ``ancIBD`` is installed, the following dependent Python packages will be automatically installed without any further action on your part:
 
 * ``numpy`` for calculations with numerical arrays at C speed 
 * ``pandas`` for handling databases and tables at C speed 
 * ``h5py`` for handling hdf5, a file format with partial I/O
 * ``psutil`` for process monitoring
 
-Some downstream and advanced functionalities require additional packages, such as ``matplotlib` for specific plots. If you are missing those, import errors will alert you. You can then install missing packages manually via ``pip``.
+Some downstream and advanced functionalities require additional packages, such as ``matplotlib`` for specific plots. If you need those, import errors will alert you. You can then install missing packages manually via ``pip`` (as above for ``ancIBD``).
